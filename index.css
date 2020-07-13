@@ -1,0 +1,36 @@
+html,
+body {
+  font-family: sans-serif;
+  color: white;
+  background-color: #121212;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+img {
+  margin-bottom: 2rem;
+  animation: bounce 2s;
+  animation-iteration-count: infinite;
+}
+
+.app-name {
+  color: #fe3c72;
+}
+
+@keyframes bounce {
+  0%,
+  40% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  60%,
+  100% {
+    transform: translateY(0rem);
+  }
+}
