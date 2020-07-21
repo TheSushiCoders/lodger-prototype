@@ -1,7 +1,7 @@
 html,
 title{
   font-family: sans-serif;
-  color:#4281A4;
+  color:#FE938C;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -11,8 +11,8 @@ title{
 }
  body {
    font-family: sans-serif;
-   color:#4281A4;
-   background-color: #EAD2AC;
+   color:#FE938C;
+   background-color: #ffb5b5;
    text-align: center;
    display: flex;
    flex-direction: column;
