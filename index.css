@@ -1,22 +1,24 @@
 html,
-*{
-  margin:0px;
-  padding: 0px;
-  box-sizing: border-box;
-  list-style: none;
-  font-family: sans-serif;
-}
-
 body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
   height: 100%;
+  overflow: hidden;
   background-color: #ead2ac;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 .container {
-  padding-top: 70px;
-  padding-left: 250px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  /* padding: 70px 20px 20px 250px; */
+  width: 100%;
   min-height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* header */
@@ -34,39 +36,69 @@ h1 {
 }
 
 /* sidebar */
-.wrapper {
+/* .wrapper {
   display: flex;
   position: relative;
 }
 .sidebar {
   width: 200px;
   height: 100%;
-  background:#e6b89c;
+  background: #e6b89c;
   color: white;
   padding: 30px 0;
   position: fixed;
+} */
+
+.navbar {
+  height: 100vh;
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #e6b89c;
+  color: white;
+  padding: 30px 0;
 }
-.wrapper .sidebar h2 {
+
+.navbar h1,
+.navbar ul,
+.navbar ul li {
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar h2 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: 3px;
 }
-.wrapper .sidebar ul li {
+.navbar ul li {
   text-align: left;
   padding: 15px;
   padding-left: 45px;
   border-top: 2px solid #ead2ac;
   letter-spacing: 3px;
 }
-.nav-links a{
+.nav-links a {
   color: white;
   text-decoration: none;
+}
+
+.main-container {
+  width: calc(100vw - 12rem);
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: overlay;
 }
 
 /* footer*/
 .footer {
   display: flex;
+  justify-content: space-evenly;
   background: #4281a4;
   color: lightgray;
   height: 200px;
@@ -74,32 +106,36 @@ h1 {
   bottom: 0px;
   padding: 18px;
 }
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .column {
+  width: 30%;
+  height: 100%;
+}
+
 /* first section of footer */
 .about-us {
-  height: 175px;
-  width: 33%
+  /* height: 175px;
+  width: 33%; */
 }
-.about-us h2{
-  text-decoration: none;
+.about-us h2 {
+  /* text-decoration: none; */
 }
-.about-txt{
+.about-txt {
   padding: 10px 0;
 }
 
 /* second section of footer */
-.relevant-links {
-  width: 33%;
-  padding-left: 10px;
-}
+
 .footer .relevant-links .links {
-  padding: 10px;  
+  padding: 10px 20px;
 }
 
 /* third section of footer */
-.contact {
-  width: 33%;
-  padding-left: 10px;
-}
 .contact-list {
   padding: 10px;
 }
