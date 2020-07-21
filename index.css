@@ -8,23 +8,37 @@ html,
 }
 
 body {
+  height: 100%;
   background-color: #ead2ac;
 }
+.container {
+  padding-top: 70px;
+  padding-left: 250px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  min-height: 100%;
+}
 
-img, h1 {
+/* header */
+img {
   max-width: 35%;
+  margin-left: 35%;
+  color: white;
+}
+h1 {
+  max-width: 50%;
   max-height: 15%;
   margin-left: 35%;
   align-items: center;
   color: white;
 }
 
+/* sidebar */
 .wrapper {
   display: flex;
   position: relative;
 }
-
-.wrapper .sidebar {
+.sidebar {
   width: 200px;
   height: 100%;
   background:#e6b89c;
@@ -32,60 +46,75 @@ img, h1 {
   padding: 30px 0;
   position: fixed;
 }
-
 .wrapper .sidebar h2 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: 3px;
 }
-
 .wrapper .sidebar ul li {
   text-align: left;
   padding: 15px;
+  padding-left: 45px;
   border-top: 2px solid #ead2ac;
   letter-spacing: 3px;
 }
-
-.extra-info {
-  max-width: 10%;
-  max-height: 10%;
-  color: lightgrey;
-  align-items: center;
-  bottom: 5%;
-}
-
 .nav-links a{
   color: white;
   text-decoration: none;
-
 }
 
-.profile-background {
-  height: 100%;
-  width: 100%;
-
-}
-.form-box {
-  width: 380px;
-  height: 450px;
+/* footer*/
+.footer {
+  display: flex;
+  background: #4281a4;
+  color: lightgray;
+  height: 200px;
   position: relative;
-  margin: 6% auto;
-  background: lightgray;
-  padding: 5px;
+  bottom: 0px;
+  padding: 18px;
+}
+/* first section of footer */
+.about-us {
+  height: 175px;
+  width: 33%
+}
+.about-us h2{
+  text-decoration: none;
+}
+.about-txt{
+  padding: 10px 0;
 }
 
-.button-box {
-  width: 250px;
-  margin: 40px auto;
-  position: relative;
-  border-radius: 30px; 
+/* second section of footer */
+.relevant-links {
+  width: 33%;
+  padding-left: 10px;
+}
+.footer .relevant-links .links {
+  padding: 10px;  
 }
 
-.toggle-btn {
-  padding: 10px 30px;
-  cursor: pointer;
-  background: #9cafb7;
-  border: 0;
-  
+/* third section of footer */
+.contact {
+  width: 33%;
+  padding-left: 10px;
 }
+.contact-list {
+  padding: 10px;
+}
+/* footer end*/
+/* ///index end/// */
+
+/* ---login page--- */
+#login-page {
+  margin: 0;
+  padding: 0;
+  background: url(seashore.jpg);
+  background-repeat: no-repeat;
+  background-size: contain cover;
+  background-position: center;
+}
+/* ///login page end/// */
+
+/* profile page */
