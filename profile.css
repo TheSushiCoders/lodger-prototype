@@ -30,8 +30,8 @@ body {
     width: 40%;
     height: 75%;
     padding: 2%;
-    background-color: rgba(0,0,0,0.3);
-    border-radius: 1%;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 1rem;
     border: 1px solid rgb(88, 96, 105); /* dunno if it looks uglier with it or not*/
     text-align: center;
     position: fixed;    /* only added to get edit button position to bottom left 
@@ -61,7 +61,7 @@ p{
 .edit {
     cursor: pointer;
     background-color: transparent;
-    color: rgb(88, 96, 105);
+    color: lightgray;
     border: none;
     font-size: 5vh;
     position: absolute;
@@ -77,6 +77,7 @@ p{
     left: 0;
     top: 0;
     text-decoration: none;
+    color: rgb(230, 230, 230);
 }
 
 a {
