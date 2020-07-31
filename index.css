@@ -28,29 +28,12 @@ img {
   color: white;
 }
 h1 {
-  /* max-width: 50%;
-  max-height: 15%; */
-  /* margin-left: 35%; */
   align-items: center;
   color: white;
 }
 .app-name {
   color: #4281a4;
 }
-
-/* sidebar */
-/* .wrapper {
-  display: flex;
-  position: relative;
-}
-.sidebar {
-  width: 200px;
-  height: 100%;
-  background: #e6b89c;
-  color: white;
-  padding: 30px 0;
-  position: fixed;
-} */
 
 .navbar {
   height: 100vh;
@@ -118,12 +101,13 @@ footer {
 }
 
 .footer h2 {
+  align-items: left;
   color: lightgray !important;
 }
 
 .footer a {
   text-decoration: none;
-  color: white;
+  color: lightgray;
 }
 
 .footer .column {
@@ -131,28 +115,6 @@ footer {
   height: 100%;
 }
 
-/* first section of footer */
-.about-us {
-  /* height: 175px;
-  width: 33%; */
-}
-.about-us h2 {
-  /* text-decoration: none; */
-}
-.about-txt {
-  padding: 10px 0;
-}
-
-/* second section of footer */
-
-.footer .relevant-links .links {
-  padding: 10px 0;
-}
-
-/* third section of footer */
-.contact-list {
-  padding: 10px;
-}
 /* footer end*/
 /* ///index end/// */
 
@@ -193,10 +155,7 @@ h2 {
   text-align: center;
 }
 
-p {
-  padding: 0 10%;
-  font-size: 1.2rem;
-}
+
 
 .fa-plane-departure,
 .fa-plane-arrival {
