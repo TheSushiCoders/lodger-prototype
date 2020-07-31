@@ -1,14 +1,85 @@
-html {
-  margin: 0px;
-  padding: 0px;
-  font-family: sans-serif;
-}
+form { 
+  border: 3px solid #FE938C; 
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center center;
+} 
 
-#login-page {
-  margin: 0;
-  padding: 0;
-  background: url(seashore.jpg);
+
+input[type=text], 
+input[type=password] { 
+  width: 100%; 
+  padding: 12px 20px; 
+  margin: 8px 0; 
+  display: inline-block; 
+  border: 1px solid #ffb5b5; 
+  box-sizing: border-box; 
+} 
+/*set a style for the buttons*/ 
+
+button { 
+  background-color: #9CAFB7; 
+  color: white; 
+  padding: 14px 20px; 
+  margin: 8px 0; 
+  border: none; 
+  cursor: pointer; 
+  width: 100%; 
+} 
+/* set a hover effect for the button*/ 
+
+button:hover { 
+  opacity: 0.8; 
+} 
+/*set extra style for the cancel button*/ 
+
+.cancelbtn { 
+  width: auto; 
+  padding: 10px 18px; 
+  background-color: #9CAFB7; 
+  color: white;
+} 
+/*centre the display image inside the container*/ 
+
+.imgcontainer { 
+
+  text-align: center; 
+  margin: 24px 0 12px 0; 
+
+}
+body {
+  background-image: url(pinkbeach.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
+  background-position: bottom;
+}
+
+
+/*set image properties*/ 
+
+img.avatar { 
+  height: 15rem; 
+   
+} 
+/*set padding to the container*/ 
+
+.container { 
+  padding: 16px; 
+} 
+/*set the forgot password text*/ 
+
+span.psw { 
+  float: right; 
+  padding-top: 16px; 
+} 
+/*set styles for span and cancel button on small screens*/ 
+
+@media screen and (max-width: 300px) { 
+  span.psw { 
+      display: block; 
+      float: none; 
+  } 
+  .cancelbtn { 
+      width: 100%; 
+  } 
 }
