@@ -1,14 +1,112 @@
-html {
+
+  
+input[type=text], 
+input[type=password] { 
+    width: 100%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 1px solid #ffb5b5; 
+    box-sizing: border-box; 
+}  
+  
+button[type="submit"]{ 
+  background-color: #9CAFB7; 
+  color: white; 
+  padding: 14px 20px; 
+  margin: 8px 0; 
+  border: none; 
+  cursor: pointer; 
+  width: 100%; 
+} 
+
+
+button:hover { 
+  opacity: 0.8; 
+} 
+
+
+.cancelbtn { 
+  width: auto; 
+  padding: 10px 18px; 
+  background-color: #9CAFB7; 
+  color: white;
+} 
+
+
+
+
+html,
+body {
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+  min-height: 100vh;
 }
 
-#login-page {
-  margin: 0;
-  padding: 0;
-  background: url(seashore.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
+body {
+    background-image: url(pinkbeach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    width: 40%;
+    height: 75%;
+    padding: 2%;
+    background-color: rgba(255,181,181,0.3);
+    border-radius: 1%;
+    border: 1px solid  rgb(255,181,181); /* dunno if it looks uglier with it or not*/
+    text-align: center;
+    position: fixed;    /* only added to get edit button position to bottom left 
+                        relative to page and not the entire screen*/
+}
+
+img {
+    max-width: 35%;
+    border-radius: 4%;
+}
+.page h1,
+.page h2,
+.page h4 {
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin: 1%;
+    color: black;
+}
+
+p{
+    font-size: 100%;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+}
+
+.back {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 7vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+}
+
+a {
+    color: white;
 }
