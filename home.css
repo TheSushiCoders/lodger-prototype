@@ -1,0 +1,104 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+body {
+    background-image: url(img/home-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* box 1 */
+.box1 {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: darkgray;
+}
+.box1 li, .box1 a {
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    color: white;
+}
+.box1 li {
+    padding: 0 1rem;
+    font-size: 1.3rem;
+}
+.logo { /* Want to get logo to be centered below doesnt work*/
+    width: 20%;
+    align-self: center;
+}
+.box1 .back {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+}
+
+/* box2 */
+.box2 { 
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem 0 5rem;
+}
+.holder{
+    max-width: 75%;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+
+}
+.holder img {
+    max-width: 90%;
+    border-radius: 1rem;
+    border: 1px solid gray;
+}
+
+/* box3 */
+
+.box3 {
+    height: 10%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.box3 .bottom li {
+    bottom:2rem;
+    cursor: pointer;
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+}
+.box3 .bottom li a {
+    color: white;
+    
+}
+.box3 .bottom li button {
+    background: transparent;
+    border: 0;
+    font-size: 3rem;
+    color: white;
+}
